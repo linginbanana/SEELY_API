@@ -1,0 +1,29 @@
+// users.create.validate.http
+### case: username is null
+POST /user
+Content-Type: application/json
+
+{
+    "username": null,
+    "password": "changeit",
+    "role": "USER"
+}
+
+### case: no username
+POST /user
+Content-Type: application/json
+
+{
+    "password": "changeit",
+    "role": "USER"
+}
+
+### case: blank username
+POST /user
+Content-Type: application/json
+
+{
+    "username": "",
+    "password": "changeit",
+    "role": "USER"
+}

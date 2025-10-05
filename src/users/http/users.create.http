@@ -1,0 +1,8 @@
+// users.create.http
+POST /user
+
+{
+    "username": "u103",
+    "password": "changeit",
+    "role": "USER"
+}
